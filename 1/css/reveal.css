@@ -1336,3 +1336,87 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+  .intro {
+  animation:glow 10s ease-in-out infinite;
+  
+  
+
+/* For less laggy effect, uncomment this:
+  
+  animation:none;
+  -webkit-text-stroke:1px #fff; 
+  
+=========== */
+  
+}
+
+.intro2 {
+  animation:glow 20s ease-in-out infinite;
+    font:'Concert One', sans-serif;
+  
+  
+
+/* For less laggy effect, uncomment this:
+  
+  animation:none;
+  -webkit-text-stroke:1px #fff; 
+  
+=========== */
+color:#0a0a0a;  
+}
+
+
+figure {
+  animation:wobble 5s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+}
+
+@keyframes wobble {
+  0%,100%{ transform:rotate3d(1,1,0,40deg); }
+  25%{ transform:rotate3d(-1,1,0,40deg); }
+  50%{ transform:rotate3d(-1,-1,0,40deg); }
+  75%{ transform:rotate3d(1,-1,0,40deg); }
+}
+@-webkit-keyframes wobble{
+  0%,100%{ transform:rotate3d(1,1,0,40deg); }
+  25%{ transform:rotate3d(-1,1,0,40deg); }
+  50%{ transform:rotate3d(-1,-1,0,40deg); }
+  100%{ transform:rotate3d(1,-1,0,40deg); }
+} 
+
+.intro {
+  display:block;
+  width:100%;
+  padding:20px;
+  line-height:1.5;
+  font:600 4em 'Concert One', sans-serif;
+  text-transform:uppercase;
+  position:absolute;
+  color:#0a0a0a;
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 40px red; }
+  25%{ text-shadow:0 0 40px orange; }
+  50%{ text-shadow:0 0 40px forestgreen; }
+  75%{ text-shadow:0 0 40px cyan; }
+}
+@-webkit-keyframes glow {
+  0%,100%{ text-shadow:0 0 40px red; }
+  25%{ text-shadow:0 0 40px orange; }
+  50%{ text-shadow:0 0 40px forestgreen; }
+  100%{ text-shadow:0 0 40px cyan; }
+} 
+
+
+.intro:nth-child(2){ transform:translateZ(5px); }
+.intro:nth-child(3){ transform:translateZ(10px);}
+.intro:nth-child(4){ transform:translateZ(15px); }
+.intro:nth-child(5){ transform:translateZ(20px); }
+/*.intro:nth-child(6){ transform:translateZ(25px); }
+.intro:nth-child(7){ transform:translateZ(30px); }
+.intro:nth-child(8){ transform:translateZ(35px); }
+.intro:nth-child(9){ transform:translateZ(40px); }
+.intro:nth-child(10){ transform:translateZ(45px); }*/
