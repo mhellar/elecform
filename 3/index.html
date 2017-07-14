@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
     <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
     </script>
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -30,25 +30,17 @@
         <div class="slides">
 
             <section>
-                <h2>LED Showcase</h2>
+                <p>Sewing Electronics</p>
+                <img src="img/thread.jpg">
+            </section>
+            <section>
+                <p>How Do I Sew with Conductive Thread?</p>
+                <img src="img/neo.jpg">
             </section>
 
             <section>
-                <h2>http://fastled.io/</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XT5ygUt8Cbk?ecver=1" frameborder="0" allowfullscreen></iframe>
             </section>
-
-            <section>
-                <h href="https://github.com/atuline/FastLED-Demos"<h2>Fast LED Examples</h2>
-            </section>
-
-            <section>
-                <h2>Project Review</h2>
-            </section>
-
-            <section>
-                <a href="http://bit.ly/29SujE5"><h2>Download code</h2></a>
-            </section>
-
 
 
             <section>
@@ -67,7 +59,7 @@
                 <a href="https://www.adafruit.com/products/1070"><img src="https://cdn-shop.adafruit.com/970x728/1070-01.jpg"></a>
             </section>
 
-             <section>
+            <section>
                 <a href="https://www.adafruit.com/products/1362"><img src="https://cdn-shop.adafruit.com/970x728/1362-03.jpg"></a>
             </section>
 
@@ -76,7 +68,7 @@
                 <a href="https://www.adafruit.com/category/35">All Kinds</a>
             </section>
 
-            
+
             <section>
                 <h2>Soldering - Downstairs</h2>
             </section>
@@ -84,7 +76,7 @@
             <section>
                 <h2>Soft Buttons</h2>
             </section>
-            
+
             <section>
                 <img src="img/fabric_button1.png">
             </section>
@@ -97,7 +89,7 @@
                 <a href="http://kobakant.at/downloads/stencils/fabric-button.pdf">Detailed PDF</a>
             </section>
 
-            
+
 
             <section>
                 <img src="img/fabric_button3.png">
@@ -113,54 +105,54 @@
 
             <section>
                 <a href="https://www.adafruit.com/product/1247"><img src="https://cdn-shop.adafruit.com/970x728/1247-00.jpg"></a>
-            </section>            
-            
+            </section>
+
 
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
     <script>
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
 
-        transition: 'convex', // none/fade/slide/convex/concave/zoom
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
 
-        // Optional reveal.js plugins
-        dependencies: [{
-            src: 'lib/js/classList.js',
-            condition: function() {
-                return !document.body.classList;
-            }
-        }, {
-            src: 'plugin/markdown/marked.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/markdown/markdown.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/highlight/highlight.js',
-            async: true,
-            callback: function() {
-                hljs.initHighlightingOnLoad();
-            }
-        }, {
-            src: 'plugin/zoom-js/zoom.js',
-            async: true
-        }, {
-            src: 'plugin/notes/notes.js',
-            async: true
-        }]
-    });
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }]
+        });
     </script>
 </body>
 
